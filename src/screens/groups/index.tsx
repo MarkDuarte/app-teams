@@ -8,7 +8,7 @@ import { Highlight } from '@components/Highlight';
 import { Container } from './styles'
 
 export function Groups() {
-  const [groups, setGroups] = useState<string[]>(['Galera do Discord'])
+  const [groups, setGroups] = useState<string[]>([])
   return (
     <Container>
       <Header />
