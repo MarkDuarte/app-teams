@@ -1,15 +1,19 @@
 import { TouchableOpacityProps } from 'react-native'
 
-import { Container, Icon } from './styles'
+import { Container, Icon, ButtonIconTypeStyleProps } from './styles'
 
 type Props = TouchableOpacityProps & {
-
+  icon: string
+  type?: ButtonIconTypeStyleProps
 }
 
-export function ButtonIcons({}: Props) {
+export function ButtonIcons({ icon, type='PRIMARY', ...rest }: Props) {
   return (
-    <Container>
-      <Icon name="home" type="PRIMARY"/>
+    <Container {...rest}>
+      <Icon 
+        name={icon} 
+        type="PRIMARY"
+      />
     </Container>
   )
 }
