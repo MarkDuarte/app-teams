@@ -10,7 +10,7 @@ import { ListEmpty } from '@components/ListEmpty';
 import { Button } from '@components/Button'
 
 export function Groups() {
-  const [groups, setGroups] = useState<string[]>(['Amigos'])
+  const [groups, setGroups] = useState<string[]>([])
   return (
     <Container>
       <Header />
@@ -32,6 +32,7 @@ export function Groups() {
         ListEmptyComponent={() => (
           <ListEmpty message="Que tal cadastrar a primeira turma ?" />
         )}
+        showsVerticalScrollIndicator={false}
       />
 
       <Button 
