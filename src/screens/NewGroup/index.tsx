@@ -33,7 +33,6 @@ export function NewGroup() {
           style={{ marginTop: 20 }}
           onPress={handleNew}
         />
-
       </Content>
     </Container>
   )
