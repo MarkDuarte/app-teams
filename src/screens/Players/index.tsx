@@ -13,7 +13,7 @@ import { ListEmpty } from '@components/ListEmpty'
 import { Container, Form, HeaderList, NumberOfPlayers } from './styles'
 import { Button } from '@components/Button'
 
-interface RouteParams {
+type RouteParams = {
   group: string
 }
 
